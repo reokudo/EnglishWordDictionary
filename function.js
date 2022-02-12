@@ -14,3 +14,8 @@ function setKeyinit(key,value){
 	else if((typeof value)=="number")url_key=Number(url_key);
 	return url_key;
 }
+
+function wordFrame(word,width='100%',height='500px'){
+	var wordurl="word.html?dic="+mydata+"&word="+word;
+	return "<iframe width=width height=height src='"+wordurl+"'></iframe>"
+}
