@@ -1,3 +1,4 @@
+//URLパラメータ取得関数
 function getParam(name, url) {
 	if (!url) url = window.location.href;
 	name = name.replace(/[\[\]]/g, "\\$&");
@@ -8,6 +9,7 @@ function getParam(name, url) {
 	return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
+//URLパラメータ取得と初期化用関数
 function setKeyinit(key,value){
 	var url_key=getParam(key);
 	if(url_key==null)url_key=value;
@@ -15,6 +17,7 @@ function setKeyinit(key,value){
 	return url_key;
 }
 
+//単語表示フレーム用関数
 function wordFrame(word,width='100%',height='500px'){
 	var wordurl="word.html?dic="+mydata+"&word="+word;
 	return "<iframe width=width height=height src='"+wordurl+"'></iframe>"

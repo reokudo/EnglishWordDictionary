@@ -1,8 +1,9 @@
+//スペース変換用関数
 function convSpace(word,space){
 	return word.replace(/ /g,space)
 }
 
-//'en-US'
+//発音用関数
 function pronounce(word,lang){
 	let u = new SpeechSynthesisUtterance();
 	u.lang =lang;
