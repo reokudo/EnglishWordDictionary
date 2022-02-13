@@ -19,6 +19,7 @@ function setKeyinit(key,value){
 
 //単語表示フレーム用関数
 function wordFrame(word,width='100%',height='500px'){
-	var wordurl="word.html?dic="+mydata+"&word="+word;
-	return "<iframe width=width height=height src='"+wordurl+"'></iframe>"
+	var wordurl="word/word.html?word="+word;
+	console.log(width,height)
+	return "<iframe width='"+width+"' height='"+height+"' src='"+wordurl+"'></iframe>"
 }
