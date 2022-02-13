@@ -1,4 +1,4 @@
-//ŒŸõƒ{ƒ^ƒ“—pŠÖ”
+//æ¤œç´¢ãƒœã‚¿ãƒ³ç”¨é–¢æ•°
 function btnclick(){
 	var word=document.getElementById("input_word").value;
 	document.getElementById("result_data").innerHTML=wordFrame(word);

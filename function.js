@@ -1,4 +1,4 @@
-//URLパラメータ取得関数
+//URL繝代Λ繝｡繝ｼ繧ｿ蜿門ｾ鈴未謨ｰ
 function getParam(name, url) {
 	if (!url) url = window.location.href;
 	name = name.replace(/[\[\]]/g, "\\$&");
@@ -9,7 +9,7 @@ function getParam(name, url) {
 	return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-//URLパラメータ取得と初期化用関数
+//URL繝代Λ繝｡繝ｼ繧ｿ蜿門ｾ励→蛻晄悄蛹也畑髢｢謨ｰ
 function setKeyinit(key,value){
 	var url_key=getParam(key);
 	if(url_key==null)url_key=value;
@@ -17,7 +17,7 @@ function setKeyinit(key,value){
 	return url_key;
 }
 
-//単語表示フレーム用関数
+//蜊倩ｪ櫁｡ｨ遉ｺ繝輔Ξ繝ｼ繝逕ｨ髢｢謨ｰ
 function wordFrame(word,width='100%',height='500px'){
 	var wordurl="word/word.html?word="+word;
 	console.log(width,height)

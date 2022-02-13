@@ -1,9 +1,9 @@
-//スペース変換用関数
+//繧ｹ繝壹�ｼ繧ｹ螟画鋤逕ｨ髢｢謨ｰ
 function convSpace(word,space){
 	return word.replace(/ /g,space)
 }
 
-//発音用関数
+//逋ｺ髻ｳ逕ｨ髢｢謨ｰ
 function pronounce(word,lang){
 	let u = new SpeechSynthesisUtterance();
 	u.lang =lang;
